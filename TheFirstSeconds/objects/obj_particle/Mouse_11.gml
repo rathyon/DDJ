@@ -1,0 +1,2 @@
+instance_deactivate_object(obj_fuse);
+instance_deactivate_object(obj_analyze);
