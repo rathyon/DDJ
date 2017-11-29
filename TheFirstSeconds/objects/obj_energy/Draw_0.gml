@@ -9,7 +9,7 @@ draw_set_color(c_white);
 draw_set_halign(fa_left);
 
 with (obj_player) {
-	energy = "X Energy: " + string(x_energy) + "\n" + "Y Energy: " + string(y_energy) + "\n" + "Z Energy: " + string(z_energy);
+	energy = "Khir: " + string(khir) + "\n" + "Ferr: " + string(ferr) + "\n" + "Yohg: " + string(yohg) + "\n" + "Stability: " + string(hp) + "%" ;
 }
 
 draw_text(cx, cy, energy);

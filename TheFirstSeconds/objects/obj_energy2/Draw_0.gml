@@ -8,7 +8,7 @@ draw_set_font(fnt_energy);
 draw_set_color(c_white);
 draw_set_halign(fa_right);
 
-energy = "X Energy: " + string(x_energy) + "\n" + "Y Energy: " + string(y_energy) + "\n" + "Z Energy: " + string(z_energy);
+energy = "Khir: " + string(khir) + "\n" + "Ferr: " + string(ferr) + "\n" + "Yohg " + string(yohg);
 
 
 draw_text(cx + cw, cy, energy);
