@@ -1,3 +1,3 @@
-if (!joining) {
-	joining = true;
-}
+//if (!joining) {
+//	joining = true;
+//}
