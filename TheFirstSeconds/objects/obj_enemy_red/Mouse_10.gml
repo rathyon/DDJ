@@ -1,8 +1,7 @@
 var button_offset = 15;
 
 fuse = instance_create_layer(x-button_offset, y-button_offset, "Instances", obj_action);
-fuse.enabled = true;
-fuse.trigger_distance = fuse_distance;
+fuse.enabled = false;
 fuse.sprite_index = spr_fuse;
 fuse.direction = direction;
 fuse.speed = speed;
@@ -15,15 +14,14 @@ analyze.direction = direction;
 analyze.speed = speed;
 
 join = instance_create_layer(x-button_offset, y+button_offset, "Instances", obj_action);
-join.enabled = true;
-join.trigger_distance = fuse_distance;
-join.joined = joined;
+join.enabled = false;
 join.sprite_index = spr_join;
 join.direction = direction;
 join.speed = speed;
 
 attack = instance_create_layer(x+button_offset, y+button_offset, "Instances", obj_action);
-attack.enabled = false;
+attack.enabled = true;
+attack.trigger_distance = attack_distance;
 attack.sprite_index = spr_attack;
 attack.direction = direction;
 attack.speed = speed;

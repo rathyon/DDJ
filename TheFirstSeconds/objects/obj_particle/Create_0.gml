@@ -18,6 +18,10 @@ joined = false;
 shot = false;
 target_x = 0;
 target_y = 0;
+fuse = false;
+analyze = false;
+join = false;
+attack = false;
 
 fuse_distance = 100;
 analyze_distance = 300;

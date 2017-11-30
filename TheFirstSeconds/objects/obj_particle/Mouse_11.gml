@@ -1,2 +1,5 @@
-instance_deactivate_object(obj_fuse);
-instance_deactivate_object(obj_analyze);
+instance_deactivate_object(obj_action);
+fuse = false;
+analyze = false;
+join = false;
+attack = false;

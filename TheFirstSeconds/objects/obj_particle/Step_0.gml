@@ -30,8 +30,7 @@ if (fusing) {
 			rotation_speed = 0.2;
 		}
 		if (enemy_energy != 0)	instance_deactivate_object(enemy_energy);
-		instance_deactivate_object(obj_fuse);
-		instance_deactivate_object(obj_analyze);
+		instance_deactivate_object(obj_action);
 		instance_destroy();
 	}
 	else {

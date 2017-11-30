@@ -23,6 +23,10 @@ if (keyboard_check(ord("A"))){
 	hspeed = -move_speed;
 }
 
+energy.khir = khir;
+energy.ferr = ferr;
+energy.yohg = yohg;
+
 var x_energy_rate = khir / (khir + ferr + yohg);
 var y_energy_rate = ferr / (khir + ferr + yohg);
 var z_energy_rate = yohg / (khir + ferr + yohg);

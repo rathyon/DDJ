@@ -19,3 +19,11 @@ friction = 0.05;
 
 // useful for the aggregated particles' movement around the player
 radius = 30;
+
+energy = instance_create_layer(x, y, "Instances", obj_energy);
+energy.khir = khir;
+energy.ferr = ferr;
+energy.yohg = yohg;
+energy.hp = hp;
+energy.text_align = fa_left;
+energy.player = true;
