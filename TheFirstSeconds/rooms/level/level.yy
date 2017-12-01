@@ -1,6 +1,6 @@
 
 {
-    "name": "room1",
+    "name": "level",
     "id": "0cf0c1c7-65a3-40bb-9c77-dbf12e6b4729",
     "creationCodeFile": "",
     "inheritCode": false,
@@ -77,7 +77,7 @@
             "id": "6ac56274-35ca-4c77-b664-3e2e0017c330",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4278517765 },
+            "colour": { "Value": 4294967295 },
             "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
@@ -96,7 +96,7 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "spriteId": "00000000-0000-0000-0000-000000000000",
+            "spriteId": "8fb85f3a-7f4b-44b5-85c7-8d84effd1201",
             "stretch": false,
             "userdefined_animFPS": false,
             "userdefined_depth": false,
