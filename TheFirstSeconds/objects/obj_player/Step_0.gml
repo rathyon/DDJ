@@ -52,6 +52,8 @@ if(restart){
 	
 	instance_create_layer(room_width / 2, room_height / 2 , "Instances", obj_gameover);
 	
+	room_instance_add(obj_gameover, room_width/2, room_height/2 , obj_gameover);
+	
 	//draw_sprite(spr_gameover, 0, room_width / 2, room_height / 2);
 	//draw_text(room_width / 2, room_height / 2 , "A black hole killed you! Press space to restart.");
 
