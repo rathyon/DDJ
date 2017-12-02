@@ -2,11 +2,11 @@
 
 For ease of communication, stability will be referred to as hp
 
-Player
-	-Hp reaches 0: game over, start again
-	-Remove passive hp regen
-	-Khir reaches 0: player cannot move
-	-If key is lifted, no energy should be spent in movement
+Player\n
+\t	-Hp reaches 0: game over, start again
+\t	-Remove passive hp regen
+\t	-Khir reaches 0: player cannot move
+\t	-If key is lifted, no energy should be spent in movement
 
 Fusion
 	-Add condition to fuse only if  player size <= target size (size could be in tiers)
