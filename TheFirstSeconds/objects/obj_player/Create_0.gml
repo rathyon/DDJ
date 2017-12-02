@@ -27,3 +27,5 @@ energy.yohg = yohg;
 energy.hp = hp;
 energy.text_align = fa_left;
 energy.player = true;
+
+restart = false;

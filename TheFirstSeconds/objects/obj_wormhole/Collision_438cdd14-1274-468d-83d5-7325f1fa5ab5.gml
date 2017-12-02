@@ -18,13 +18,16 @@ if ( room==0){
 			
 		}
 	}
+	instance_destroy(obj_player);
+	
 	room_goto_next();
 	
 	room_instance_add(room+1, 270, 240, obj_player);
-	
+
 }
 else if (room==1){
 	room_goto(room_first);
+	instance_position(770, 520, obj_player);
 	
 
 }

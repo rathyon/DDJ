@@ -38,8 +38,29 @@ image_yscale = image_xscale;
 
 radius = max(30, (khir + ferr + yohg) / 2);
 
-if(hp <= 0){
+if (hp <= 0)
+{
 	//fission
+	
+    restart = true;
+	
+}
+
+if(restart){
+	instance_destroy(obj_player);
+	instance_deactivate_all(true);
+	
+	instance_create_layer(room_width / 2, room_height / 2 , "Instances", obj_gameover);
+	
+	//draw_sprite(spr_gameover, 0, room_width / 2, room_height / 2);
+	//draw_text(room_width / 2, room_height / 2 , "A black hole killed you! Press space to restart.");
+
+    if (keyboard_check_pressed(vk_space))
+    {
+        room_restart();
+		restart=false;
+		
+    }
 }
 
 // slow regeneration

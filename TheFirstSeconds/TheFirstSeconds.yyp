@@ -153,6 +153,25 @@
             }
         },
         {
+            "Key": "28d971bb-f807-49c8-9b78-5be99a361078",
+            "Value": {
+                "id": "9f33b9f5-acfe-43a4-a582-3382046b9943",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_gameover\/obj_gameover.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2c40959f-d50d-431f-9a24-695fd19389c7",
             "Value": {
                 "id": "c5a93358-1b8b-4d0b-bf75-af89da1e974c",
@@ -438,6 +457,25 @@
             }
         },
         {
+            "Key": "76864ceb-b5cd-481c-844f-80b108b806b7",
+            "Value": {
+                "id": "33c63aa0-05c2-46b7-bb6a-b05faee28418",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_blackhole\/spr_blackhole.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "768c8072-64b1-43a8-8ea4-681bb82c8741",
             "Value": {
                 "id": "717c886c-776e-4fa5-aa23-35eb18ad1e5d",
@@ -606,6 +644,25 @@
                 ],
                 "resourcePath": "views\/aab10ae1-d078-4aec-bffd-44392afe10da.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ab9f9d2a-aace-468f-a614-f10138a5298d",
+            "Value": {
+                "id": "b71c9b7e-d717-438c-b12d-956ade152efe",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_gameover\/spr_gameover.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -910,6 +967,25 @@
                 ],
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f6e8909c-d632-4916-9c3e-c1e806e2d3ba",
+            "Value": {
+                "id": "b250e611-7eff-42ba-b410-7c882d0ab93d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_blackhole\/obj_blackhole.yy",
+                "resourceType": "GMObject"
             }
         },
         {
