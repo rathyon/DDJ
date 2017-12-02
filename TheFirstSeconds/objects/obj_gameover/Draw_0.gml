@@ -14,4 +14,6 @@ message += "A black hole killed you! Press space to restart.";
 
 draw_text(draw_x, cy, message);
 
-instance_position(room_width/2, room_height/2, obj_gameover);
+instance_position(x, y, obj_gameover);
+
+draw_self();

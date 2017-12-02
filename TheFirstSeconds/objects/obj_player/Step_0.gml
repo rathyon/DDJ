@@ -48,21 +48,21 @@ if (hp <= 0)
 
 if(restart){
 	instance_destroy(obj_player);
-	instance_deactivate_all(true);
+	//instance_deactivate_all(true);
 	
-	instance_create_layer(room_width / 2, room_height / 2 , "Instances", obj_gameover);
+	instance_create_layer(x, y , "Instances", obj_gameover);
 	
-	room_instance_add(obj_gameover, room_width/2, room_height/2 , obj_gameover);
+	room_instance_add(obj_gameover, x, y , obj_gameover);
 	
-	//draw_sprite(spr_gameover, 0, room_width / 2, room_height / 2);
-	//draw_text(room_width / 2, room_height / 2 , "A black hole killed you! Press space to restart.");
-
-    if (keyboard_check_pressed(vk_space))
-    {
-        room_restart();
-		restart=false;
+	while(true){
+		if (keyboard_check_pressed(vk_space))
+		{
+			room_restart();
+			restart=false;
 		
-    }
+		}
+	}
+    
 }
 
 // slow regeneration
