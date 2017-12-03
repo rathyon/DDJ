@@ -48,10 +48,9 @@ if (hp <= 0)
 
 if(restart){
 	
-	//instance_destroy(obj_player);
-	//instance_deactivate_all(true);
-	move_speed = 0;
-	rotation_speed = 0;
+	instance_destroy(obj_player);
+	instance_deactivate_all(true);
+	
 	
 	instance_create_layer(x, y , "Instances", obj_gameover);
 	
