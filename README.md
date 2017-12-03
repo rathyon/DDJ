@@ -3,23 +3,9 @@
 For ease of communication, stability will be referred to as hp
 
 Player
-	-Hp reaches 0: game over, start again
-	-Remove passive hp regen
-	-Khir reaches 0: player cannot move
-	-If key is lifted, no energy should be spent in movement
-
-Fusion
-	-Add condition to fuse only if  player size <= target size (size could be in tiers)
-
-Joining
-	-Limit number of joined particles by level of Ferr in tiers
-	-Ferr defines player size
-	-Let's make them spin very slowly
-	-Player can fuse with joined particles
+	-"Fuel" based movement
 
 Shooting
-	-Shooting requires spending Yohg
-	-Shooting target is mouse pointer
 	-Shoot the nearest particle to the target (player will have to time their shots)
 	-On collision, if energy type between particles is the same, the target loses hp
 	-If energy type is different, target increases in size
@@ -38,13 +24,6 @@ Shooting
 	-Pulling the player towards them
 	-Pushing the player away from them (bouncing)
 	-Make things fast/slow around their area of influence
-
-"Good" Particles (aka health packs)
-	-Going over them restores hp
-	-Should be very small particles
-
-"Energetic" Particles
-	-Total of 3 types of particles, 1 for each energy type (elementary particles)
 
 Wormholes
 	-Transport player if [energy type] requirement is met (could be > 50%)

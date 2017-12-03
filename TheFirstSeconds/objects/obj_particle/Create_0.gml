@@ -1,33 +1,80 @@
+// for animation purposes
 image_alpha = 0;
+
+
 randomize();
-khir = irandom(100);
-ferr = irandom(100);
-yohg = irandom(100);
+
+// 1 = Khir particle
+// 2 = Ferr particle
+// 3 = Yohg particle
+type = irandom_range(1,3);
+
+// size tier
+size_rng = irandom_range(0, 100); 
+// 75% of particles are tier 0
+// 15% are tier 1
+// 5% are tier 2
+tier = 0;
+
+if(size_rng > 75) {
+	tier = 1;
+}
+else if(size_rng > 95) {
+	tier = 2;
+}
+
+//giving energies based on type
+if(type == 1){
+	khir = 20 + tier * 20;
+	ferr = 0;
+	yohg = 0;
+}
+else if (type == 2){
+	khir = 0;
+	ferr = 20 + tier * 20;
+	yohg = 0;
+}
+else if (type == 3) {
+	khir = 0;
+	ferr = 0;
+	yohg = 20 + tier * 20;
+}
+
 image_angle = random(360);
 
 // energy based attribute: speed/rotation speed
-move_speed = 0.1 + (khir / 150) * 0.4;
-rotation_speed = (khir / 150) * 1.6;
+move_speed = 0.1 + (khir / 10) * 0.4;
+rotation_speed = (khir / 30) * 1.6;
 
+// random movement set at spawn
 motion_set(random(360),move_speed);
+
+// what is enemy_energy?!
 enemy_energy = 0;
+
 spawned = false;
+
+//fusion variables
 fusing = false;
+fuse = false;
+fuse_distance = 100;
+
+// joining variables
 joining = false;
 joined = false;
 shot = false;
 target_x = 0;
 target_y = 0;
-fuse = false;
+start_x = 0;
+start_y = 0;
+
+
 analyze = false;
 join = false;
 attack = false;
 
-fuse_distance = 100;
 analyze_distance = 300;
 
-// checking what's the biggest energy level and assigning it a sprite based on it
-var max_energy = max(khir, ferr, yohg);
-
-if( max_energy == ferr) sprite_index = spr_y;
-else if( max_energy == yohg) sprite_index = spr_z;
+// assigning sprite based on type
+if(type == 2) sprite_index = spr_y;
+else if(type == 3) sprite_index = spr_z;

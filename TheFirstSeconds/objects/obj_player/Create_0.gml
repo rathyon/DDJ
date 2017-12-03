@@ -11,21 +11,32 @@ yohg = 10;
 // "health pack" particles
 hp = 100;
 
-move_speed = (khir / 30) + 1;
+// size tier
+tier = 0;
+
+// number of fusions
+fusions = 0;
+
+// number of joined particles
+joined = 0;
+// max number of joined particles
+join_limit = 0;
+
+move_speed = (khir / 30);
 
 rotation_speed = (khir / 150) + 0.2;
 
-friction = 0.05;
+friction = 0.1;
 
 // useful for the aggregated particles' movement around the player
 radius = 30;
 
-energy = instance_create_layer(x, y, "Instances", obj_energy);
-energy.khir = khir;
-energy.ferr = ferr;
-energy.yohg = yohg;
-energy.hp = hp;
-energy.text_align = fa_left;
-energy.player = true;
+stat_display = instance_create_layer(x, y, "Instances", obj_energy);
+stat_display.khir = khir;
+stat_display.ferr = ferr;
+stat_display.yohg = yohg;
+stat_display.hp = hp;
+stat_display.text_align = fa_left;
+stat_display.player = true;
 
 restart = false;

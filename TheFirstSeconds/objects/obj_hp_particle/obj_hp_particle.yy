@@ -2,7 +2,7 @@
     "id": "f99491c8-91dd-4ae9-8085-35d80f947d8d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_energy_particle",
+    "name": "obj_hp_particle",
     "eventList": [
         {
             "id": "b476b60e-0e32-4c24-ab8f-616cc5a9f56f",
@@ -25,13 +25,13 @@
             "m_owner": "f99491c8-91dd-4ae9-8085-35d80f947d8d"
         },
         {
-            "id": "629aead6-9784-44c0-a21a-92d9d16ac071",
+            "id": "83b9dcca-02e5-4905-9313-6eb50dc35f39",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 6,
+            "collisionObjectId": "555a5f0f-b64b-435d-9757-f9464733b67a",
+            "enumb": 0,
+            "eventtype": 4,
             "m_owner": "f99491c8-91dd-4ae9-8085-35d80f947d8d"
         }
     ],

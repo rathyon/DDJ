@@ -19,9 +19,9 @@ if (room==0){
 	//}
 	room_goto_next();
 	
-	//room_instance_add(room+1, 270, 240, my_player);
-	instance_place(270, 270, obj_player);
-	instance_position(270, 270, obj_player);
+	room_instance_add(room+1, 270, 240, obj_player);
+	//instance_place(270, 270, obj_player);
+	//instance_position(270, 270, obj_player);
 
 }
 else if (room==1){
