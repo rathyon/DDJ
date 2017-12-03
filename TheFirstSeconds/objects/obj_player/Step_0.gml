@@ -47,21 +47,15 @@ if (hp <= 0)
 }
 
 if(restart){
-	instance_destroy(obj_player);
+	
+	//instance_destroy(obj_player);
 	//instance_deactivate_all(true);
+	move_speed = 0;
+	rotation_speed = 0;
 	
 	instance_create_layer(x, y , "Instances", obj_gameover);
 	
-	room_instance_add(obj_gameover, x, y , obj_gameover);
-	
-	while(true){
-		if (keyboard_check_pressed(vk_space))
-		{
-			room_restart();
-			restart=false;
-		
-		}
-	}
+	room_instance_add(obj_gameover, x, y , obj_gameover);	
     
 }
 
