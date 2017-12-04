@@ -1,1 +1,1 @@
-if (enemy_energy != 0)	instance_deactivate_object(enemy_energy);
+if (stat_display != 0)	instance_deactivate_object(stat_display);

@@ -49,8 +49,7 @@ rotation_speed = (khir / 30) * 1.6;
 // random movement set at spawn
 motion_set(random(360),move_speed);
 
-// what is enemy_energy?!
-enemy_energy = 0;
+stat_display = 0;
 
 spawned = false;
 
