@@ -7,7 +7,7 @@ move_speed = 0.7;
 rotation_speed = 0.7;
 
 motion_set(random(360),move_speed);
-enemy_energy = 0;
+stat_display = 0;
 spawned = false;
 fusing = false;
 joining = false;

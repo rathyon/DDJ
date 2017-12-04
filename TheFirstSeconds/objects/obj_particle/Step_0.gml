@@ -50,7 +50,11 @@ if (fusing) {
 		
 		obj_player.join_limit = floor(obj_player.ferr / 20);
 		
-		if (enemy_energy != 0)	instance_deactivate_object(enemy_energy);
+		if (stat_display != 0)	instance_deactivate_object(stat_display);
+		if (joined) {
+			obj_player.joined -= 1;
+			ds_list_delete(obj_player.joined_particles, ds_list_find_index(obj_player.joined_particles, id));
+		}
 		instance_deactivate_object(obj_action);
 		instance_destroy();
 	}
@@ -67,6 +71,7 @@ else if(joining && !joined) {
 	if (point_distance(obj_player.x, obj_player.y, x, y) < obj_player.radius + 5){
 		joined = true;
 		obj_player.joined += 1;
+		ds_list_add(obj_player.joined_particles, id);
 	} 
 	else {
 		move_towards_point(obj_player.x, obj_player.y, 1);

@@ -6,7 +6,6 @@ Player
 	-"Fuel" based movement
 
 Shooting
-	-Shoot the nearest particle to the target (player will have to time their shots)
 	-On collision, if energy type between particles is the same, the target loses hp
 	-If energy type is different, target increases in size
 

@@ -21,6 +21,8 @@ fusions = 0;
 joined = 0;
 // max number of joined particles
 join_limit = 0;
+//list with joined particles
+joined_particles = ds_list_create();
 
 move_speed = (khir / 30);
 
