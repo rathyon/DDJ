@@ -1,12 +1,13 @@
 // height, width set in CREATE METHOD
-xp = view_xview[0] + 800
-yp = view_yview[0] + 550
+xp = camera_get_view_x(view_camera[0]) + 800
+yp = camera_get_view_y(view_camera[0]) + 550
 
+draw_set_color(c_black)
 draw_set_alpha(0.5)
 draw_rectangle(xp, yp, xp+width, yp+height, false)
 
 //draw player
-draw_set_color(c_purple)
+draw_set_color(c_silver)
 draw_set_alpha(0.8)
 var wherex = xp + obj_player.x*(xscale)
 var wherey = yp + obj_player.y*(yscale)
@@ -23,9 +24,21 @@ for (i=0; i < instance_number(obj_particle); i++) {
 }
 
 //draw goal
-
+draw_set_color(c_blue)
+draw_set_alpha(0.8)
+var wherex = xp + obj_exit.x*(xscale)
+var wherey = yp + obj_exit.y*(yscale)
+draw_rectangle(wherex, wherey, wherex + 2, wherey + 2, false)
 
 //draw enemies
+draw_set_color(c_red)
+draw_set_alpha(0.8)
+for (i=0; i < instance_number(obj_enemy_red); i++) {
+	particleID = instance_find(obj_enemy_red, i)
+	wherex = xp + particleID.x*(xscale)
+	wherey = yp + particleID.y*(yscale)
+	draw_circle(wherex, wherey, 2, false)
+}
 
 //draw wormhole
 
