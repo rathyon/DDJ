@@ -13,13 +13,13 @@ if (image_alpha < 1.0 && !spawned) {
 }
 
 if(type == 1){
-	image_blend = make_color_rgb(155 + (tier * 50), 0, 0);
+	image_blend = make_color_rgb(155 + (tier * 50), 0, 50);
 }
 else if(type == 2){
-	image_blend = make_color_rgb(0, 155 + (tier * 50), 0);
+	image_blend = make_color_rgb(50, 155 + (tier * 50), 0);
 }
 else{
-	image_blend = make_color_rgb(0, 0, 155 + (tier * 50));
+	image_blend = make_color_rgb(0, 50, 155 + (tier * 50));
 }
 
 image_xscale = 1 + (1 * tier);
