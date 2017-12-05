@@ -1,2 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+height = 200
+width = 200
+xscale = width/room_width
+yscale = height/room_height
