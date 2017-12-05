@@ -9,7 +9,9 @@ image_angle = random(360);
 move_speed = 0.1 + (khir / 150) * 0.4;
 rotation_speed = (khir / 150);
 
-motion_set(random(360),move_speed);
+//motion_set(random(360),move_speed);
+moving = false;
+random_direction = random(360);
 stat_display = 0;
 spawned = false;
 //fusing = false;

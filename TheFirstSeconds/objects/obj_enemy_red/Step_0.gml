@@ -13,4 +13,6 @@ image_yscale = image_xscale;
 
 image_angle += rotation_speed % 360;
 
-
+if (moving) {
+	motion_set(random_direction, move_speed);
+}
