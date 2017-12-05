@@ -39,6 +39,7 @@ radius = 30 + (6 * tier);
 if (hp <= 0)
 {
     restart = true;
+	game_over_message = "You became too unstable! Press space to restart."
 }
 
 if(restart){
@@ -47,9 +48,10 @@ if(restart){
 	instance_deactivate_all(true);
 	
 	
-	instance_create_layer(x, y , "Instances", obj_gameover);
+	var game_over = instance_create_layer(x, y , "Instances", obj_gameover);
+	game_over.message = game_over_message;
 	
-	room_instance_add(obj_gameover, x, y , obj_gameover);	
+	//room_instance_add(obj_gameover, x, y , obj_gameover);	
     
 }
 

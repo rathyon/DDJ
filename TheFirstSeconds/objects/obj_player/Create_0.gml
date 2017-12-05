@@ -42,3 +42,4 @@ stat_display.text_align = fa_left;
 stat_display.player = true;
 
 restart = false;
+game_over_message = "";
