@@ -1,3 +1,9 @@
+if(x < 0 || x > room_width) {
+	instance_destroy();
+} else if(y < 0 || y > room_width) {
+	instance_destroy();
+}
+
 if (image_alpha < 1.0 && !spawned) {
 	image_alpha += 0.02;
 } else if (!spawned) {
