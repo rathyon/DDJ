@@ -41,6 +41,11 @@ for (i=0; i < instance_number(obj_enemy_red); i++) {
 }
 
 //draw wormhole
+draw_set_color(c_aqua)
+draw_set_alpha(0.8)
+var wherex = xp + obj_wormhole.x*(xscale)
+var wherey = yp + obj_wormhole.y*(yscale)
+draw_rectangle(wherex, wherey, wherex + 2, wherey + 2, false)
 
 //draw blackwhole
 

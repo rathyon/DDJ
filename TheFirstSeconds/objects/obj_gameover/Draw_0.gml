@@ -11,7 +11,9 @@ layer_force_draw_depth(true, 20);
 
 //message = "A black hole killed you! Press space to restart.";
 
+x = cx + 525
+y = cy + 375
+
 draw_self();
 
-draw_text(x-295, y, message);
-//draw_text(cw/2, ch/2, message);
+draw_text(cx+225, cy+425, message);

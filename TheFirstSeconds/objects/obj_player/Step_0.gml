@@ -1,29 +1,30 @@
 var min_speed = 0.5;
 
 if (keyboard_check(ord("W"))){ 
-	khir = max(0, khir - 0.03);
+	khir = max(0, khir - 0.015);
 	move_speed = (khir / 10) + min_speed;
 	rotation_speed = (khir / 150) + 0.2;
 	vspeed = -move_speed;
 }
 if (keyboard_check(ord("S"))){
-	khir = max(0, khir - 0.03);
+	khir = max(0, khir - 0.015);
 	move_speed = (khir / 10) + min_speed;
 	rotation_speed = (khir / 150) + 0.2;
 	vspeed = move_speed;
 }
 if (keyboard_check(ord("D"))){
-	khir = max(0, khir - 0.03);
+	khir = max(0, khir - 0.015);
 	move_speed = (khir / 10) + min_speed;
 	rotation_speed = (khir / 150) + 0.2;
 	hspeed = move_speed;
 }
 if (keyboard_check(ord("A"))){
-	khir = max(0, khir - 0.03);
+	khir = max(0, khir - 0.015);
 	move_speed = (khir / 10) + min_speed;
 	rotation_speed = (khir / 150) + 0.2;
 	hspeed = -move_speed;
 }
+friction = khir*0.01;
 
 // update stat display
 stat_display.khir = khir;
