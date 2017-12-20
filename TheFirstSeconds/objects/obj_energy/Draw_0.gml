@@ -15,20 +15,41 @@ energy += "Yohg: " + string(yohg) + "\n";
 if (player) {
 	energy += "Stability: " + string(hp) + "%" + "\n";
 	//debugging
-	energy += "Join Limit: " + string(obj_player.join_limit) + "\n";
+	energy += "\n";
 	energy += "Joined :" + string(obj_player.joined);
 	draw_x = cx;
 }
 
 var bar_y = cy;
 
-draw_healthbar(draw_x, bar_y, draw_x + 400, bar_y + 30, obj_player.khir, c_black, c_maroon, c_red, 0, false, true);
+//Speed bar
+draw_healthbar(draw_x, bar_y, draw_x + 300, bar_y + 30, obj_player.khir, c_black, c_maroon, c_red, 0, false, true);
 
+//Join limit bar
 bar_y += 30;
-draw_healthbar(draw_x, bar_y, draw_x + 400, bar_y + 30, obj_player.ferr, c_black, c_lime, c_green, 0, false, true);
+var ferr_counter = obj_player.ferr;
+for(var i = 0; i < 5; i++){
+	if(ferr_counter > 20){
+		draw_healthbar(draw_x + (i*40), bar_y, draw_x + 30 + (i*40), bar_y + 30, 100, c_black, c_lime, c_lime, 0, false, true);
+		ferr_counter -= 20;
+		continue;
+	}
+	else{
+		draw_healthbar(draw_x + (i*40), bar_y, draw_x + 30 + (i*40), bar_y + 30, ferr_counter * 5, c_black, c_lime, c_lime, 0, false, true);
+		break;
+	}
+}
 
+//Shooting fuel bar
 bar_y += 30;
-draw_healthbar(draw_x, bar_y, draw_x + 400, bar_y + 30, obj_player.yohg, c_black, c_aqua, c_blue, 0, false, true);
+draw_healthbar(draw_x, bar_y, draw_x + 300, bar_y + 30, obj_player.yohg, c_black, c_aqua, c_blue, 0, false, true);
+
+//HP bar
+bar_y += 30;
+draw_healthbar(draw_x, bar_y, draw_x + 300, bar_y + 30, obj_player.hp, c_black, c_red, c_green, 0, false, true);
+
+//Join limit bars: each filled bar = current join limit
+bar_y += 35;
 
 draw_text(draw_x, cy, energy);
 

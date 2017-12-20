@@ -19,6 +19,23 @@ image_yscale = image_xscale;
 
 image_angle += rotation_speed % 360;
 
+if(glow_phase == 1){
+	red_glow -= glow_step;
+	blue_glow += glow_step;
+	
+	if(blue_glow >= 1.0)
+		glow_phase = 2;
+}
+else{
+	red_glow += glow_step;
+	blue_glow -= glow_step;
+	
+	if(red_glow >= 1.0)
+		glow_phase = 1;
+}
+
+image_blend = make_color_rgb(100 + 20*red_glow, 0, 170 + 80*blue_glow);
+
 if (moving) {
 	motion_set(random_direction, move_speed);
 }

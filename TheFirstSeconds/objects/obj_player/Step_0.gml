@@ -26,6 +26,9 @@ if (keyboard_check(ord("A"))){
 }
 friction = khir*0.01;
 
+//regen hp
+hp = min(100, hp + 0.025);
+
 // update stat display
 stat_display.khir = khir;
 stat_display.ferr = ferr;

@@ -24,6 +24,14 @@ target_y = 0;
 attack_distance = 300;
 analyze_distance = 500;
 
+//glow variables
+red_glow = 1.0;
+blue_glow = 0.0;
+glow_step = 0.005;
+
+// 1 = turning blue, 2 = turning red
+glow_phase = 1;
+
 // checking what's the biggest energy level and assigning it a sprite based on it
 var max_energy = max(khir, ferr, yohg);
 
