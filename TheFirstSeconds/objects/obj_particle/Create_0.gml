@@ -72,7 +72,7 @@ analyze = false;
 join = false;
 attack = false;
 
-analyze_distance = 300;
+analyze_distance = 150;
 
 // assigning sprite based on type
 if(type == 2) sprite_index = spr_y;

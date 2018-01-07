@@ -35,16 +35,21 @@ OPTIONAL
 
 
 # Feedback from Miniclip guys
+	
+	# TODO
 
 - clicar no inimigo para atacar
 - acrescentar repulsão nos limites do mapa
 - os comandos estão muit confusos : rato + teclado
-- mostrar o Analyze quando estamos próximos e não por clicar
 - estabilidade: frustrante -> não sabem porque perderam -> adicionar um Alert, ou a particula treme, ou aviso com mensagem, ou por estabilidade a piscar em vermelho
-- diminuir menos estabilidade com as fusões
 - ir regenerando estabilidade lentamente e quando atingir o 0 ela desintegra-se (por animação)
 - mostrar objetivo no jogo ( por do género de uma seta no player a apontar em diração do objetivo )
 - as energias não são claras para o jogador -> para que servem?
 - barra do fohg e do yohg serem por níveis
 - existir avisos: ex-> não pode fundir com a particula porque é maior que nós
 - clarificar a diferença entre as particulas más e as boas e existir particulas mistas
+
+	# DONE
+- mostrar o Analyze quando estamos próximos e não por clicar
+- diminuir menos estabilidade com as fusões   ---> meti a -5 em vez de -10
+

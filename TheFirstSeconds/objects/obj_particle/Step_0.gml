@@ -46,7 +46,7 @@ if (fusing) {
 			obj_player.tier = 1;
 		}
 		
-		obj_player.hp -= 10;
+		obj_player.hp -= 5;
 		
 		obj_player.join_limit = floor(obj_player.ferr / 20);
 		
@@ -89,5 +89,31 @@ else if(joined) {
 		x = obj_player.x + lengthdir_x(obj_player.radius + 15, image_angle);
 		y = obj_player.y + lengthdir_y(obj_player.radius + 15, image_angle);
 		rotation_speed = 1;
+	}
+}
+
+
+//ANALYZE
+if (point_distance(obj_player.x, obj_player.y, x, y) < analyze_distance) {
+	
+	if(stat_display != 0){
+		instance_activate_object(stat_display);
+		stat_display.khir = khir;
+		stat_display.ferr = ferr;
+		stat_display.yohg = yohg;
+		stat_display.text_align = fa_right;
+		stat_display.player = false;
+	}else{
+		stat_display = instance_create_layer(x, y, "Instances", obj_energy);
+		stat_display.khir = khir;
+		stat_display.ferr = ferr;
+		stat_display.yohg = yohg;
+		stat_display.text_align = fa_right;
+		stat_display.player = false;
+	}
+	
+}else{
+	if (stat_display != 0){
+		instance_deactivate_object(stat_display);
 	}
 }
