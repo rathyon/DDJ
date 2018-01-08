@@ -36,7 +36,6 @@ if (fusing) {
 		obj_player.ferr = min(100, obj_player.ferr + ferr);
 		obj_player.yohg = min(100, obj_player.yohg + yohg);
 		
-		//obj_player.hp -= 20;
 		obj_player.fusions += 1;
 		obj_player.rotation_speed = 0.2;
 		
@@ -46,7 +45,7 @@ if (fusing) {
 			obj_player.tier = 1;
 		}
 		
-		obj_player.hp -= 5;
+		obj_player.hp = max(0, obj_player.hp - 10);
 		
 		obj_player.join_limit = floor(obj_player.ferr / 20);
 		

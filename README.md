@@ -38,17 +38,26 @@ OPTIONAL
 	
 	# TODO
 
-- clicar no inimigo para atacar
 - acrescentar repulsão nos limites do mapa
-- os comandos estão muit confusos : rato + teclado
 - estabilidade: frustrante -> não sabem porque perderam -> adicionar um Alert, ou a particula treme, ou aviso com mensagem, ou por estabilidade a piscar em vermelho
-- ir regenerando estabilidade lentamente e quando atingir o 0 ela desintegra-se (por animação)
-- as energias não são claras para o jogador -> para que servem?
-- barra do fohg e do yohg serem por níveis
+- quando atingir a 0 de estabilidade ela desintegra-se (por animação)
 - existir avisos: ex-> não pode fundir com a particula porque é maior que nós
-- clarificar a diferença entre as particulas más e as boas e existir particulas mistas
+- existir particulas mistas
 
 	# DONE
-- mostrar o Analyze quando estamos próximos (+ mouse-over) e não por clicar
-- diminuir menos estabilidade com as fusões   ---> meti a -5 em vez de -10
-- mostrar objetivo no jogo ( por do género de uma seta no player a apontar em diração do objetivo )
+- mostrar o Analyze quando estamos próximos (+ mouse-over) e não por clicar - Telma
+- mostrar objetivo no jogo ( por do género de uma seta no player a apontar em diração do objetivo ) - Telma
+
+- diminuir menos estabilidade com as fusões -> voltei a meter -10, já tinha alterado antes baseado nisto - Rafael
+- barra do fohg e do yohg serem por níveis -> esqueci-me de fazer para o yohg, agora já está - Rafael
+- clarificar a diferença entre as particulas más e as boas -> also done - Rafael
+- regen de estabilidade -> also done - Rafael
+- clicar no inimigo para atacar -> left click dispara - Rafael
+- as energias não são claras para o jogador -> dei nomes elucidativos - Rafael
+
+- os comandos estão muit confusos : rato + teclado -> 
+CONTROLOS:
+WASD: Movimento
+left click em energética = fuse
+right click em energética = join
+left click em inimiga = shoot
