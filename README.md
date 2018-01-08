@@ -49,6 +49,6 @@ OPTIONAL
 - clarificar a diferença entre as particulas más e as boas e existir particulas mistas
 
 	# DONE
-- mostrar o Analyze quando estamos próximos e não por clicar
+- mostrar o Analyze quando estamos próximos (+ mouse-over) e não por clicar
 - diminuir menos estabilidade com as fusões   ---> meti a -5 em vez de -10
 - mostrar objetivo no jogo ( por do género de uma seta no player a apontar em diração do objetivo )
