@@ -17,9 +17,11 @@ if (room==0){
 			
 	//	}
 	//}
+	obj_player.joined = 0;
+	ds_list_clear(obj_player.joined_particles);
 	room_goto_next();
 	
-	room_instance_add(room+1, 270, 240, obj_player);
+	//room_instance_add(room+1, 270, 240, obj_player);
 	//instance_place(270, 270, obj_player);
 	//instance_position(270, 270, obj_player);
 
