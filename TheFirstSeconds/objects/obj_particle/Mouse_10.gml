@@ -3,6 +3,7 @@ var button_offset = 15;
 fuse = instance_create_layer(x-button_offset, y-button_offset, "Instances", obj_action);
 fuse.enabled = true;
 fuse.trigger_distance = fuse_distance;
+fuse.trigger = obj_player.tier >= tier;
 fuse.sprite_index = spr_fuse;
 fuse.image_xscale *= 0.3;
 fuse.image_yscale *= 0.3;
