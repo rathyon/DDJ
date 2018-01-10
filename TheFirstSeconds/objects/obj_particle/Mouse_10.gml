@@ -4,6 +4,8 @@ fuse = instance_create_layer(x-button_offset, y-button_offset, "Instances", obj_
 fuse.enabled = true;
 fuse.trigger_distance = fuse_distance;
 fuse.sprite_index = spr_fuse;
+fuse.image_xscale *= 0.3;
+fuse.image_yscale *= 0.3;
 fuse.direction = direction;
 fuse.speed = speed;
 
@@ -14,19 +16,22 @@ fuse.speed = speed;
 //analyze.direction = direction;
 //analyze.speed = speed;
 
-join = instance_create_layer(x-button_offset, y+button_offset, "Instances", obj_action);
+join = instance_create_layer(x+button_offset, y-button_offset, "Instances", obj_action);
 join.enabled = true;
 join.trigger_distance = fuse_distance;
 join.joined = joined;
+join.trigger = (obj_player.tier >= tier && obj_player.join_limit - obj_player.joined > 0);
 join.sprite_index = spr_join;
+join.image_xscale *= 0.3;
+join.image_yscale *= 0.3;
 join.direction = direction;
 join.speed = speed;
 
-attack = instance_create_layer(x+button_offset, y+button_offset, "Instances", obj_action);
-attack.enabled = false;
-attack.sprite_index = spr_attack;
-attack.direction = direction;
-attack.speed = speed;
+//attack = instance_create_layer(x+button_offset, y+button_offset, "Instances", obj_action);
+//attack.enabled = false;
+//attack.sprite_index = spr_attack;
+//attack.direction = direction;
+//attack.speed = speed;
 
 
 //ANALYZE

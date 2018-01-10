@@ -1,5 +1,5 @@
 if (enabled) {
-	if ((point_distance(obj_player.x, obj_player.y, mouse_x, mouse_y) > trigger_distance) || joined) {
+	if ((point_distance(obj_player.x, obj_player.y, mouse_x, mouse_y) > trigger_distance) || joined || !trigger) {
 		image_alpha = 0.5;
 	}
 	else {
