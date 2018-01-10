@@ -1,0 +1,6 @@
+// if colliding with player...
+if(place_meeting(x,y, obj_player)){
+}
+// if not...
+else {
+}

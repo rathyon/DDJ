@@ -27,6 +27,9 @@ joined_particles = ds_list_create();
 
 move_speed = (khir / 30);
 
+//slowness caused by energy field
+slow_factor = 0;
+
 rotation_speed = (khir / 150) + 0.2;
 
 friction = 0.1;

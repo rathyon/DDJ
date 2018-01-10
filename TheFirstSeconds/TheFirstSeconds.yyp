@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "50bab825-74b0-4d7a-88d3-15078451055e",
+            "Value": {
+                "id": "b547af6d-5a43-4f10-a8e4-dfde8054d4f8",
+                "resourcePath": "rooms\\room_4\\room_4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "5441e1a8-e7ae-43ba-b90d-163f24edd576",
             "Value": {
                 "id": "dbefb5d9-93d0-4719-b5bf-583d86603430",
@@ -271,6 +279,14 @@
             }
         },
         {
+            "Key": "779e36c0-1b97-4e25-aa0c-6a7e617f3f66",
+            "Value": {
+                "id": "c9509f60-1764-4f70-aeee-75882654f7df",
+                "resourcePath": "objects\\obj_energy_field\\obj_energy_field.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7bd184c8-61bd-4ff1-ac39-b4021b4a1825",
             "Value": {
                 "id": "4e750deb-70fc-4f1c-9a41-23480af865ef",
@@ -290,7 +306,7 @@
             "Key": "850b9f45-042a-40b7-b7f5-2d668f33dd64",
             "Value": {
                 "id": "b0b4b328-54e5-4707-be8a-0e256e3438eb",
-                "resourcePath": "rooms\/good_energies_room\/good_energies_room.yy",
+                "resourcePath": "rooms\\hp_room\\hp_room.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -447,14 +463,6 @@
             }
         },
         {
-            "Key": "dcfcfa77-a6d1-4370-ae36-7fa32b613806",
-            "Value": {
-                "id": "36f10622-314f-46c8-8288-0afcc7c5d01d",
-                "resourcePath": "sprites\/spr_player\/spr_player.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "dd2086e4-7509-45e1-9494-9961a117630c",
             "Value": {
                 "id": "3cc631c5-067a-45c6-8bdf-a15689421bb6",
@@ -471,11 +479,27 @@
             }
         },
         {
+            "Key": "edcd356a-37bb-458e-989e-a133b30f580d",
+            "Value": {
+                "id": "f2328d29-f18c-471a-9bb7-4f056deb762a",
+                "resourcePath": "rooms\\fuel_room\\fuel_room.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "f6e8909c-d632-4916-9c3e-c1e806e2d3ba",
             "Value": {
                 "id": "b250e611-7eff-42ba-b410-7c882d0ab93d",
                 "resourcePath": "objects\/obj_blackhole\/obj_blackhole.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f7d0b964-6bdc-42fe-90e9-23795be8ce54",
+            "Value": {
+                "id": "7f46347b-cbbd-4c17-8b56-ec2111d6c00c",
+                "resourcePath": "sprites\\spr_energy_field\\spr_energy_field.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

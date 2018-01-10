@@ -29,6 +29,21 @@ if (room==0){
 else if (room==1){
 	room_goto(room_first);
 	//instance_position(770, 520, my_player);
-	
+}
 
+//HARD CODED POSITIONS TO DIFFERENTIATE WORMHOLES
+else if(room == 2){
+	if(x = 256 && y == 1376){
+		room_goto(3);
+	}
+	else{
+		room_goto(4);
+	}
+}
+
+else if(room == 3){
+	room_goto(2);
+}
+else if(room == 4){
+	room_goto(2);
 }

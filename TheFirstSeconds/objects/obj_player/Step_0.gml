@@ -2,25 +2,25 @@ var min_speed = 0.5;
 
 if (keyboard_check(ord("W"))){ 
 	khir = max(0, khir - 0.015);
-	move_speed = (khir / 10) + min_speed;
+	move_speed = (khir / 10) + min_speed - slow_factor;
 	rotation_speed = (khir / 150) + 0.2;
 	vspeed = -move_speed;
 }
 if (keyboard_check(ord("S"))){
 	khir = max(0, khir - 0.015);
-	move_speed = (khir / 10) + min_speed;
+	move_speed = (khir / 10) + min_speed - slow_factor;
 	rotation_speed = (khir / 150) + 0.2;
 	vspeed = move_speed;
 }
 if (keyboard_check(ord("D"))){
 	khir = max(0, khir - 0.015);
-	move_speed = (khir / 10) + min_speed;
+	move_speed = (khir / 10) + min_speed - slow_factor;
 	rotation_speed = (khir / 150) + 0.2;
 	hspeed = move_speed;
 }
 if (keyboard_check(ord("A"))){
 	khir = max(0, khir - 0.015);
-	move_speed = (khir / 10) + min_speed;
+	move_speed = (khir / 10) + min_speed - slow_factor;
 	rotation_speed = (khir / 150) + 0.2;
 	hspeed = -move_speed;
 }
@@ -35,11 +35,11 @@ stat_display.ferr = ferr;
 stat_display.yohg = yohg;
 stat_display.hp = hp;
 
-image_xscale = 1 + (1 * tier);
+image_xscale = 1 + (0.5 * tier);
 image_yscale = image_xscale;
 
 //radius = max(30, (khir + ferr + yohg) / 2);
-radius = 30 + (6 * tier);
+radius = 30 + (50 * tier);
 
 // on death, restart 
 if (hp <= 0)
