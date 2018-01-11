@@ -11,7 +11,7 @@ draw_self();
 
 if (error_display) {
 	depth = -5; //bad solution, prevents error message from appearing behind object but alters the depth of the object itself
-	draw_text(cx + cw/2, cy + 100, error_message);
+	draw_text(cx + cw/2, cy + 200, error_message);
 }
 
 depth = 0;

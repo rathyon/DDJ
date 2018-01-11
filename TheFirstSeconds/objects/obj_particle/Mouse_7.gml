@@ -7,18 +7,18 @@ if (point_distance(obj_player.x, obj_player.y, x, y) < fuse_distance) {
 		}
 		else {
 			error_display = true;
-			error_message = "It's too big to fuse"
+			error_message = "[ Too big to fuse ]"
 			alarm[0] = error_timer;
 		}
 	}
 	else {
 		error_display = true;
-		error_message = "It's already fusing"
+		error_message = "[ Already fusing ]"
 		alarm[0] = error_timer;
 	}
 }
 else {
 	error_display = true;
-	error_message = "I'm too far away to fuse"
+	error_message = "[ Too far away to fuse ]"
 	alarm[0] = error_timer;
 }

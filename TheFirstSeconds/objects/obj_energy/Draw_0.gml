@@ -13,7 +13,8 @@ energy += "Speed: " + string(khir) + "\n";
 energy += "Capacity: " + string(ferr) + "\n";
 energy += "Discharge: " + string(yohg) + "\n";
 if (player) {
-	energy += "Stability: " + string(hp) + "%" + "\n";
+	// % symbol doesnt work with Michroma font
+	energy += "Stability: " + string(hp) + /*"%" + */"\n";
 	//debugging
 	energy += "\n";
 	energy += "Joined :" + string(obj_player.joined);

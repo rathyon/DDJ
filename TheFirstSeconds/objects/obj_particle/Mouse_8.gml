@@ -6,24 +6,24 @@ if (point_distance(obj_player.x, obj_player.y, x, y) < fuse_distance) {
 			}
 			else {
 				error_display = true;
-				error_message = "It's already joining"
+				error_message = "[ Already joining ]"
 				alarm[0] = error_timer;
 			}
 		}
 		else {
 			error_display = true;
-			error_message = "I need more energy to join"
+			error_message = "[ More energy required ]"
 			alarm[0] = error_timer;
 		}
 	}
 	else {
 		error_display = true;
-		error_message = "It's too big to join"
+		error_message = "[ Too big to join ]"
 		alarm[0] = error_timer;
 	}
 }
 else {
 	error_display = true;
-	error_message = "I'm too far away to join"
+	error_message = "[ Too far away ]"
 	alarm[0] = error_timer;
 }
