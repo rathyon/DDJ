@@ -41,11 +41,10 @@ OPTIONAL
 - acrescentar repulsão nos limites do mapa
 - estabilidade: frustrante -> não sabem porque perderam -> adicionar um Alert, ou a particula treme, ou aviso com mensagem, ou por estabilidade a piscar em vermelho
 - quando atingir a 0 de estabilidade ela desintegra-se (por animação)
-- existir avisos: ex-> não pode fundir com a particula porque é maior que nós
 - existir particulas mistas
 
 	# DONE
-- mostrar o Analyze quando estamos próximos (+ mouse-over) e não por clicar - Telma
+- mostrar o Analyze quando estamos próximos (+ mouse-over) e não por clicar - Telma/Gonçalo
 - mostrar objetivo no jogo ( por do género de uma seta no player a apontar em diração do objetivo ) - Telma
 
 - diminuir menos estabilidade com as fusões -> voltei a meter -10, já tinha alterado antes baseado nisto - Rafael
@@ -54,8 +53,9 @@ OPTIONAL
 - regen de estabilidade -> also done - Rafael
 - clicar no inimigo para atacar -> left click dispara - Rafael
 - as energias não são claras para o jogador -> dei nomes elucidativos - Rafael
+- existir avisos -> acrescentei mensagens de erro - Gonçalo
 
-- os comandos estão muit confusos : rato + teclado -> 
+- os comandos estão muito confusos : rato + teclado -> já não é preciso teclado
 CONTROLOS:
 WASD: Movimento
 left click em energética = fuse
