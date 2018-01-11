@@ -1,6 +1,6 @@
 //goto level2
 
-if(room == 0 || room == 1){
+sdif(room == 0 || room == 1){
 	room_set_persistent(0,false);
 	room_set_persistent(1,false);
 	instance_destroy(obj_player);
