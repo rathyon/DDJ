@@ -34,18 +34,18 @@ if (closest_particle != 0) {
 		}
 		else {
 			error_display = true;
-			error_message = "I need more energy to shoot"
+			error_message = "[ More energy required ]"
 			alarm[0] = error_timer;
 		}
 	}
 	else {
 		error_display = true;
-		error_message = "That particle is not joined"
+		error_message = "[ Particle is not joined ]"
 		alarm[0] = error_timer;
 	}
 }
 else {
 	error_display = true;
-	error_message = "I don't have a particle to shoot"
+	error_message = "[ Nothing to shoot with ]"
 	alarm[0] = error_timer;
 }
