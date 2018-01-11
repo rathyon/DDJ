@@ -37,3 +37,8 @@ var max_energy = max(khir, ferr, yohg);
 
 if( max_energy == ferr) sprite_index = spr_y;
 else if( max_energy == yohg) sprite_index = spr_z;
+
+error_message = "";
+error_display = false;
+error_timer = 45;
+alarm[0] = error_timer;

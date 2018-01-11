@@ -77,3 +77,8 @@ analyze_distance = 150;
 // assigning sprite based on type
 if(type == 2) sprite_index = spr_y;
 else if(type == 3) sprite_index = spr_z;
+
+error_message = "";
+error_display = false;
+error_timer = 45;
+alarm[0] = error_timer;
