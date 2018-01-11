@@ -12,7 +12,10 @@ if (image_alpha < 1.0 && !spawned) {
 	spawned = true;
 }
 
-if(type == 1){
+if(room = 2) {
+	image_blend = make_color_rgb(155,0,50);
+}
+else if(type == 1){
 	image_blend = make_color_rgb(155 + (tier * 50), 0, 50);
 }
 else if(type == 2){
@@ -21,8 +24,9 @@ else if(type == 2){
 else{
 	image_blend = make_color_rgb(0, 50, 155 + (tier * 50));
 }
-
-image_xscale = 1 + (1 * tier);
+	
+if(room = 2) image_xscale = 0.25;
+else image_xscale = 1 + (1 * tier);
 image_yscale = image_xscale;
 
 image_angle += rotation_speed % 360;

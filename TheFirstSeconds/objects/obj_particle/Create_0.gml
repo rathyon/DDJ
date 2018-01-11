@@ -75,7 +75,8 @@ attack = false;
 analyze_distance = 150;
 
 // assigning sprite based on type
-if(type == 2) sprite_index = spr_y;
+if(room = 2) sprite_index = spr_shot;
+else if(type == 2) sprite_index = spr_y;
 else if(type == 3) sprite_index = spr_z;
 
 error_message = "";

@@ -1,4 +1,9 @@
-if (point_distance(obj_player.x, obj_player.y, x, y) < fuse_distance) {
+if (room = 2) {
+	error_display = true;
+	error_message = "[ Can't fuse ]"
+	alarm[0] = error_timer;
+}
+else if (point_distance(obj_player.x, obj_player.y, x, y) < fuse_distance) {
 	if (!fusing) {
 		if (obj_player.tier >= tier) {
 			fusing = true;
