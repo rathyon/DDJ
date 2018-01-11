@@ -23,7 +23,9 @@ attack = instance_create_layer(x/*+button_offset*/, y-button_offset, "Instances"
 attack.enabled = true;
 attack.trigger_distance = attack_distance;
 attack.trigger = (obj_player.joined > 0 && obj_player.yohg >= 20);
-attack.sprite_index = spr_attack;
+attack.sprite_index = spr_actions;
+attack.image_index = 0;
+attack.image_speed = 0;
 attack.image_xscale *= 0.3;
 attack.image_yscale *= 0.3;
 attack.direction = direction;
