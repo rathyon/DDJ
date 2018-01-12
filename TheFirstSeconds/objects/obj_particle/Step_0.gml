@@ -15,10 +15,10 @@ if (image_alpha < 1.0 && !spawned) {
 if(room = 2) {
 	image_blend = make_color_rgb(155,0,50);
 }
-else if(type == 1){
+else if(type < 50){
 	image_blend = make_color_rgb(155 + (tier * 50), 0, 50);
 }
-else if(type == 2){
+else if(type < 75){
 	image_blend = make_color_rgb(50, 155 + (tier * 50), 0);
 }
 else{

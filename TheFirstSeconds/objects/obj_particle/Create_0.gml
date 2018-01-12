@@ -7,7 +7,7 @@ randomize();
 // 1 = Khir particle
 // 2 = Ferr particle
 // 3 = Yohg particle
-type = irandom_range(1,3);
+type = irandom_range(0, 100);
 
 // size tier
 size_rng = irandom_range(0, 100); 
@@ -24,17 +24,17 @@ else if(size_rng > 95) {
 }
 
 //giving energies based on type
-if(type == 1){
+if(type < 50){
 	khir = 20 + tier * 20;
 	ferr = 0;
 	yohg = 0;
 }
-else if (type == 2){
+else if (type < 75){
 	khir = 0;
 	ferr = 20 + tier * 20;
 	yohg = 0;
 }
-else if (type == 3) {
+else if (type >= 75) {
 	khir = 0;
 	ferr = 0;
 	yohg = 20 + tier * 20;
@@ -76,8 +76,8 @@ analyze_distance = 150;
 
 // assigning sprite based on type
 if(room = 2) sprite_index = spr_shot;
-else if(type == 2) sprite_index = spr_y;
-else if(type == 3) sprite_index = spr_z;
+else if(type >= 50 && type < 75) sprite_index = spr_y;
+else if(type >= 75) sprite_index = spr_z;
 
 error_message = "";
 error_display = false;
