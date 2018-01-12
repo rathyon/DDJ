@@ -81,5 +81,5 @@ else if(type == 3) sprite_index = spr_z;
 
 error_message = "";
 error_display = false;
-error_timer = 45;
+error_timer = 60;
 alarm[0] = error_timer;

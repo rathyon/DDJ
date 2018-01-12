@@ -40,5 +40,5 @@ else if( max_energy == yohg) sprite_index = spr_z;
 
 error_message = "";
 error_display = false;
-error_timer = 45;
+error_timer = 60;
 alarm[0] = error_timer;

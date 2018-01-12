@@ -1,4 +1,4 @@
-if (room = 2) {
+if (room == 2) {
 	error_display = true;
 	error_message = "[ Can't fuse ]"
 	alarm[0] = error_timer;
