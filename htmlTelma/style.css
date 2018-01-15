@@ -5,6 +5,8 @@ body {
 	background-attachment: fixed;
     overflow-x: hidden;
     overflow-y: auto;
+    font-family: Michroma;
+
 }
 
 .content_center {
@@ -23,10 +25,10 @@ body {
 #firstSection{
     top:0%;
 }
-#screenshots{
+#video{
     top:100%;
 }
-#video{
+#screenshots{
     top:200%;
 }
 #contact{
