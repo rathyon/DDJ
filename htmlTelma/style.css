@@ -1,7 +1,7 @@
 
 /* GERAL */
 body {
-	background-image: url("resources/outer-space-hd-wallpaper.jpg");
+	background-image: url("resources/background2.png");
 	background-attachment: fixed;
     overflow-x: hidden;
     overflow-y: auto;
@@ -13,7 +13,7 @@ body {
     margin: 0 ;
 	width: 90%;
     left: 8%;
-    height: 100%;
+    height: 100% !important;
 }
 
 
@@ -21,13 +21,13 @@ body {
 /* SECTIONS */
 
 #firstSection{
-    top:10;
+    top:10%;
 }
 #screenshots{
-    top:100%;
+    top:105%;
 }
 #video{
-    top:190%;
+    top:230%;
 }
 
 
@@ -47,14 +47,14 @@ body {
 .vertical-menu a {
     background-color: black; 
     display: block; 
-    padding: 30%; 
     margin: auto;
-    margin-top: 30%;
+    padding: 10%;
+    margin-top: 85%;
     text-decoration: none; /* Remove underline from links */
     color: white;
     text-align: center;
     font-family: Michroma;
-    font-size: 1em;
+    font-size: 10px;
 }
 
 .vertical-menu a:hover {
@@ -65,6 +65,7 @@ body {
     background-color: grey; /* Add a green color to the "active/current" link */
     color: white;
 } 
+
 
 
 
@@ -99,7 +100,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-	width: 90%;
+	width: 80%;
+    height: auto;
 }
 
 #trailer {
