@@ -21,13 +21,13 @@ body {
 /* SECTIONS */
 
 #firstSection{
-    top:10%;
+    top:0%;
 }
 #screenshots{
-    top:105%;
+    top:100%;
 }
 #video{
-    top:230%;
+    top:200%;
 }
 
 
@@ -68,7 +68,6 @@ body {
 
 
 
-
 /* others */
 
 #header_logo {
@@ -96,13 +95,28 @@ body {
 	height: 300px;
 }*/
 
-#screenshot {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-	width: 80%;
-    height: auto;
+
+div.scrollmenu {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 90%;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
+
+div.scrollmenu img {
+    position: relative;
+    display: inline-block;
+    padding: 14px;
+    margin: auto;
+    width: 80%;
+
+}
+
+
 
 #trailer {
     display: block;
