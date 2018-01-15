@@ -127,9 +127,10 @@ div.scrollmenu {
 div.scrollmenu img {
     position: relative;
     display: inline-block;
-    padding: 14px;
-    margin: auto;
-    width: 80%;
+    padding: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
 
 }
 
