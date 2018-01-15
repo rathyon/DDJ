@@ -1,0 +1,110 @@
+
+/* GERAL */
+body {
+	background-image: url("resources/outer-space-hd-wallpaper.jpg");
+	background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.content_center {
+    display: block;
+    position: absolute;
+    margin: 0 ;
+	width: 90%;
+    left: 8%;
+    height: 100%;
+}
+
+
+
+/* SECTIONS */
+
+#firstSection{
+    top:10;
+}
+#screenshots{
+    top:100%;
+}
+#video{
+    top:190%;
+}
+
+
+
+/* MENU */
+
+
+.vertical-menu {
+    position:fixed;
+    top: 0;
+    left:-0.5%;
+    width: 8%; 
+    height: 100%;
+    background-color: black;
+}
+
+.vertical-menu a {
+    background-color: black; 
+    display: block; 
+    padding: 30%; 
+    margin: auto;
+    margin-top: 30%;
+    text-decoration: none; /* Remove underline from links */
+    color: white;
+    text-align: center;
+    font-family: Michroma;
+    font-size: 1em;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: grey; /* Add a green color to the "active/current" link */
+    color: white;
+} 
+
+
+
+/* others */
+
+#header_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 80%;
+}
+
+#concept {
+	color: white;
+	text-align: center;
+	font-family: Michroma;
+	font-size: 1.3em;
+}
+
+/*#screenshot_table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.screenshot {
+	width: 300px;
+	height: 300px;
+}*/
+
+#screenshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 90%;
+}
+
+#trailer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 90%;
+}
