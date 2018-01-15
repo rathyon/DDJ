@@ -23,17 +23,14 @@ body {
 #firstSection{
     top:0%;
 }
-#about{
+#screenshots{
     top:100%;
 }
-#screenshots{
+#video{
     top:200%;
 }
-#video{
-    top:300%;
-}
 #contact{
-    top:400%;
+    top:300%;
 }
 
 
@@ -56,8 +53,8 @@ body {
     background-color: black; 
     display: block; 
     margin: auto;
-    padding: 10%;
-    margin-top: 85%;
+    padding: 13%;
+    margin-top: 100%;
     text-decoration: none; /* Remove underline from links */
     color: white;
     text-align: center;
@@ -80,18 +77,33 @@ body {
 
 /* others */
 
+#header{
+    position: relative;
+    display: block;
+    margin: 0%;
+    width: 100%;
+    height: 50%;
+}
+
 #header_logo {
+    position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
 	width: 80%;
 }
 
-#concept, #conceptstory {
+#concept{
+    position: relative;
+    display: block;
+    margin: 0%;
+    top:10%;
+    width: 100%;
+    height: 50%;
 	color: white;
 	text-align: center;
 	font-family: Michroma;
-	font-size: 1.3em;
+	font-size: 1em;
 }
 
 /*#screenshot_table {
