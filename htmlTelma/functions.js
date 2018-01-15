@@ -1,6 +1,8 @@
 function changeClass(what){
 
-	document.getElementsByClassName('active').setAttribute( 'class', ' ' );
+	console.log(document.getElementsByClassName('active'));
+
+	document.getElementsByClassName('active')[0].setAttribute( 'class', ' ' );
 
 
 	what.setAttribute( 'class', 'active' );
