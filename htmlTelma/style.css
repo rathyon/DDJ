@@ -23,12 +23,20 @@ body {
 #firstSection{
     top:0%;
 }
-#screenshots{
+#about{
     top:100%;
 }
-#video{
+#screenshots{
     top:200%;
 }
+#video{
+    top:300%;
+}
+#contact{
+    top:400%;
+}
+
+
 
 
 
@@ -68,6 +76,8 @@ body {
 
 
 
+
+
 /* others */
 
 #header_logo {
@@ -77,7 +87,7 @@ body {
 	width: 80%;
 }
 
-#concept {
+#concept, #conceptstory {
 	color: white;
 	text-align: center;
 	font-family: Michroma;
