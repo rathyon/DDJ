@@ -75,7 +75,7 @@ body {
 
 
 
-/* others */
+/* FIRST SECTION */
 
 #header{
     position: relative;
@@ -106,17 +106,12 @@ body {
 	font-size: 1em;
 }
 
-/*#screenshot_table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
 
-.screenshot {
-	width: 300px;
-	height: 300px;
-}*/
 
+
+
+
+/* screenshots SECTION */
 
 div.scrollmenu {
     position: relative;
@@ -140,9 +135,27 @@ div.scrollmenu img {
 
 
 
+
+
+/* TRAILER SECTION */
+
 #trailer {
     display: block;
     margin-left: auto;
     margin-right: auto;
 	width: 90%;
+}
+
+
+
+
+
+
+/* ABOUT SECTION */
+
+#contact{
+    color: white;
+    text-align: center;
+    font-family: Michroma;
+    font-size: 1em;
 }
